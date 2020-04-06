@@ -1,0 +1,29 @@
+<Window x:Class="Ppet.DebugWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Ppet"
+        mc:Ignorable="d"
+        Title="Log"
+        Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--
+        <ItemsControl ItemsSource="{x:Static local:Debug.KbState}">
+            <ItemsControl.ItemStringFormat>{0:X}</ItemsControl.ItemStringFormat>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="16"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+        -->
+
+        <ListBox Grid.Row="1" ItemsSource="{x:Static local:Debug.History}" />
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ppet", "Ppet\Ppet.csproj", "{A5AED676-0B6D-4F69-A608-69B4B6031EC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PpetTests", "PpetTests\PpetTests.csproj", "{7D4F7C74-B66C-45C5-AFE6-5CEDEDA75F76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5AED676-0B6D-4F69-A608-69B4B6031EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5AED676-0B6D-4F69-A608-69B4B6031EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5AED676-0B6D-4F69-A608-69B4B6031EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5AED676-0B6D-4F69-A608-69B4B6031EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D4F7C74-B66C-45C5-AFE6-5CEDEDA75F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4F7C74-B66C-45C5-AFE6-5CEDEDA75F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4F7C74-B66C-45C5-AFE6-5CEDEDA75F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4F7C74-B66C-45C5-AFE6-5CEDEDA75F76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

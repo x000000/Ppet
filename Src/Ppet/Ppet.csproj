@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UseWPF>true</UseWPF>
+        <LangVersion>8</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.0.8">
+          <NoWarn>NU1701</NoWarn>
+      </PackageReference>
+      <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\tray.ico" />
+      <None Remove="Resources\tray_connected.ico" />
+      <Resource Include="Resources\tray.ico" />
+      <Resource Include="Resources\tray_connected.ico" />
+    </ItemGroup>
+
+</Project>

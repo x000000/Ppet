@@ -1,0 +1,38 @@
+﻿<Window x:Class="Ppet.AddressWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xaml="clr-namespace:Ppet.Xaml"
+        mc:Ignorable="d"
+        Name="Window"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        MinWidth="250"
+        WindowStartupLocation="CenterScreen"
+        Title="Connect to ...">
+    <Window.Resources>
+        <xaml:IsNotEmptyConverter x:Key="IsNotEmpty" TrimText="True" />
+    </Window.Resources>
+
+    <Grid Margin="4" DataContext="{Binding ElementName=Window}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Grid.ColumnSpan="3" Margin="0 0 0 4" Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button Grid.Row="1" Grid.Column="1" Margin="8 0 0 0" Padding="6 2"
+                Content="OK"
+                Click="Ok_OnClick"
+                IsEnabled="{Binding Address, Converter={StaticResource IsNotEmpty}}"/>
+        <Button Grid.Row="1" Grid.Column="2" Margin="8 0 0 0" Padding="6 2"
+                Content="Cancel"
+                Click="Cancel_OnClick"/>
+    </Grid>
+</Window>
